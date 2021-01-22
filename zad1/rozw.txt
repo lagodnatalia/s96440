@@ -1,0 +1,18 @@
+Rodzaje wirtualizacji:
+-parawirtualizacja (system operacyjny wspolpracuje ze srodowiskiem operacyjnym komputera
+w zakresie obslugi elementow, ktorych obsluga kolidowalaby z dzialanoscia innych srodowisk 
+zwirtualizowanych ->przyklady: ibm lpar, oracle vm (ldom oraz ovm)
+-pelna wirtualizacja (system operacyjny pracuje w zasoback sprzetu fizycznego.->przyklady: virtualbox,vmvare server
+-wirtualizacja na poziomie systemu operacyjnego (sytem operacyjny obsluguje kilka odseparowanych
+od siebie srodowisk wirtualnych->przyklady : virtualbox,vmware server
+-wirtualizacja hybrydowa (system dziala na zasadzie pelnej wirtualizacji, ale posiada odpowiednio 
+zainstalowane parawirtualizowane sterowniki do urzadzen-> przyklady: xen, vmware esxi
+
+Roznice:
+-przy pelnej wirtualizacji maszyna wirtualna symuluje wszystkie wymagane zasoby sprzetowe
+(zachodzi oddzielenie systemu operacyjnego dzialajacego na maszynie wirtualnej od fizycznego sprzetu)
+-przy parawirtualizacji nie jest wykorzystywana emulacja zasobow sprzetowych jak przy pelnej wirtualizacji
+oraz systemy operacyjne korzystajace z maszyny wymagaja odpowiednich sterownikow
+-przy wirtualizacji hybrydowej potrzebna jest modyfikacja systemu operacyjnego goscia aby wywolywac api
+-przy wirtualizacji na poziomie systemu operacyjnego ma najwyzsza wydajnosc i funkcje dzialajace na kontenerach
+oprogramowania trafiaja do systemu operacyjnego hosta wykonujacego je bezposrednio na sprzecie
